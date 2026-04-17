@@ -22,9 +22,9 @@ prb.country AS destination_country,
 prb.name AS destination_airport_name,
 c.*
 FROM cte_1 c
-JOIN {{ref('prep_airports pra')}}
+JOIN {{ref('prep_airports')}} pra
 ON c.origin = pra.faa
-JOIN {{ref('prep_airports prb')}}
+JOIN {{ref('prep_airports')}} prb
 ON c.dest = prb.faa
 
 
