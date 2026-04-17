@@ -1,6 +1,3 @@
-SELECT * 
-FROM prep_flights;
-
 
 WITH departures AS (
 SELECT origin, 
