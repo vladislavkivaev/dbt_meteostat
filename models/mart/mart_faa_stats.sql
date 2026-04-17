@@ -40,7 +40,7 @@ ON d.origin = a.dest
 SELECT ap.city, ap.country, ap.name, ts.*
 FROM total_stats ts
 JOIN {{ref('prep_airports')}} ap
-ON ts.airport_code = ap.faa;
+ON ts.airport_code = ap.faa
 
 
 
