@@ -63,7 +63,7 @@ pwd.avg_wind_direction,
 pwd.avg_wind_speed,
 pwd.avg_peakgust AS avg_daily_peakgust
 FROM mart_faa_stats mfs
-JOIN {{('prep_weather_daily')}} pwd
+JOIN {{ref('prep_weather_daily')}} pwd
 ON mfs.airport_code = pwd.airport_code
 AND mfs.flight_date = pwd.date
 WHERE mfs.airport_code IN ('JFK', 'MIA', 'LAX')
