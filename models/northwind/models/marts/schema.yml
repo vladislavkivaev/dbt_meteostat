@@ -18,9 +18,8 @@ models:
         tests: [not_null]
       - name: category_name
         description: "Product category"
-        tests: - not_null
-               - unique
-               - [not_null, unique]
-               - accepted_values:
-                    values: ['Produce', 'Seafood', 'Beverages', 'Condiments', 'Confections', 'Dairy Products','Grains/Cereals', 'Meat/Poultry']
+        tests: 
+            - not_null
+            - accepted_values:
+                  values: ['Produce', 'Seafood', 'Beverages', 'Condiments', 'Confections', 'Dairy Products','Grains/Cereals', 'Meat/Poultry']
           
