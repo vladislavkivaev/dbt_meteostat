@@ -12,7 +12,7 @@ select
     arr_delay,
     cancelled           as is_cancelled,
     diverted            as is_diverted,
-    distance
+    distance,
     period_type
 from source
 where flight_date is not null 
