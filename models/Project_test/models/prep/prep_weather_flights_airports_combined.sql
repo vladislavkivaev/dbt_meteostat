@@ -39,4 +39,4 @@ from flights f
 left join airports a
     on f.origin_airport = a.faa
 left join weather w
-    on f.origin_airport = w.airport_code
+    on f.origin_airport = w.airport_code and f.flight_date = w.date
