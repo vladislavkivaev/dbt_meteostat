@@ -7,6 +7,7 @@ WITH daily_raw AS (
 ),
 daily_flattened AS (
     SELECT  airport_code,
+            (json_data ->> 'date')::DATE AS date,
             (json_data->>'tmin')::NUMERIC AS min_temp_c,
             (json_data->>'tmax')::NUMERIC AS max_temp_c,
             (json_data->>'prcp')::NUMERIC AS precipitation_mm,
