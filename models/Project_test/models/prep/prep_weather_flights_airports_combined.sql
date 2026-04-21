@@ -25,6 +25,7 @@ select
     a.airport_name,
     a.city,
     w.date as weather_date,
+    w.avg_temp_c as avg_daily_temperature,
     w.min_temp_c as min_daily_temperature,
     w.max_temp_c as max_daily_temperature,
     w.precipitation_mm as daily_precipitation_mm,
