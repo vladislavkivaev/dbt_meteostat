@@ -5,6 +5,6 @@ select * from {{ source('raw', 'raw_airports') }}
 select
 faa, 
 name as airport_name,
-city,
+city
 from source
 where faa is not null
