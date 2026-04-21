@@ -4,6 +4,6 @@ sources:
   - name: raw
     schema: airdata_collective
     tables:
-      - name: flights_raw
+      - name: raw_flights
       - name: weather_daily_texas_2021
-      - name: airports
+      - name: raw_airports
