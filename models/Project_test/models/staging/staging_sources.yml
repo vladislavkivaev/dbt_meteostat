@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: airdata_collective
+    tables:
+      - name: flights_raw
+      - name: weather_daily_texas_2021
+      - name: airports
